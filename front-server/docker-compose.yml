@@ -19,3 +19,7 @@ services:
     volumes:
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
+networks:
+  default:
+    external:
+      name: rms_net
